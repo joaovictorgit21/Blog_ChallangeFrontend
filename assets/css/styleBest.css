@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #e07b67;
+    --background-color: #121214;
+    --secondary-color: #17171A;
+    --text-color: #AFABB6;
+    --border-color: #252529;
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Space Grotesk', sans-serif;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-primary);
+}
+
+.headerPage {
+    width: 100%;
+    height: 263px;
+    background-color: var(--secondary-color);
+}
+
+h1 {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 45px;
+    line-height: 1.25;
+}
+
+.colorCode {
+    color: var(--primary-color);
+}
+
+.searchInput {
+    width: 65%;
+    max-width: 600px;
+    height: 50px;
+    color: #878788;
+    background-color: #202024;
+    border: solid 2px var(--border-color);
+    margin: 50px auto 15px;
+    font-size: 15px;
+    padding-left: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.card {
+    width: 65%;
+    max-width: 600px;
+    min-height: 50px;
+    margin: 26px auto;
+    border: solid 1px var(--border-color);
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.dateAndSave {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.date {
+    font-size: 13px;
+    color: var(--primary-color);
+}
+
+.imgHearth {
+    height: 15px;
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease;
+}
+
+.imgHearth:hover {
+    filter: brightness(1.5);
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #757577;
+}
+
+@media (max-width: 768px) {
+    .searchInput, .card {
+        width: 90%;
+    }
+}

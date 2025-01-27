@@ -92,6 +92,7 @@ h1 {
 }
 
 .imgHearth:hover {
+    cursor: pointer;
     background-image: url('../images/hearthFill.png');
 }
 
